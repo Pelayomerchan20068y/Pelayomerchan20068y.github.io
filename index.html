@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,81 +24,96 @@
             font-size: 24px;
         }
 
-        .ejercicios-html {
-            background-color: #ffe6cc; 
-            padding: 20px;
-            text-align: center;
-            color: #333;
-        }
-
-        .ejercicios-html h2 {
-            font-size: 20px;
-        }
-
-        .ejercicios-html a {
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #0066cc;
-        }
-
-       
+        .ejercicios-html,
         .ejercicios-css {
-            background-color: #ffccff; 
             padding: 20px;
             text-align: center;
             color: #333;
         }
 
+        .ejercicios-html h2,
         .ejercicios-css h2 {
             font-size: 20px;
         }
 
+        .ejercicios-html a,
         .ejercicios-css a {
             display: block;
             margin-bottom: 10px;
             text-decoration: none;
-            color: #9900cc;
+            color: #0066cc;
+            transition: color 0.3s ease;
+        }
+
+        .ejercicios-html a:hover,
+        .ejercicios-css a:hover {
+            color: #004080;
+        }
+
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
+
 <body>
 
-  
     <div class="datos-personales">
-        <h1>Me llamo Pelayo Merchán Pérez, estudio segundo de bachillerato tecnologico en el IES Rio Nora y mis mayores aficiones son los deportes y los coches. </h1>
-       
+        <h1>Me llamo Pelayo Merchán Pérez, estudio segundo de bachillerato tecnológico en el IES Rio Nora y mis mayores aficiones son los deportes y los coches. </h1>
     </div>
 
-    <div class="ejercicios-html">
+
+    <ol>
+        <li><a href="#html-section">Ejercicios introducción HTML</a></li>
+        <li><a href="#css-section">Ejercicios introducción CSS</a></li>
+    </ol>
+
+    <div class="ejercicios-html" id="html-section">
         <h2>Ejercicios introducción HTML</h2>
         <a href="TICPELAyo/Ejercicio 1 Conceptos básicos de HTML.html">ejercicio 1</a><br>
-      <a href="TICPELAyo/Ejercicio 2 Desafío HTML.html">ejercicio 2</a><br>
-       <a href="TICPELAyo/Ejercicio 3 Etiquetas strong y em.html"> ejercicio 3</a><br>
-       <a href="TICPELAyo/html-ejerc4-listas.html">ejericio 4</a><br>
-       <a href="TICPELAyo/html-ejerc5-utf-8.html.html">ejercicio 5</a><br>
-      <a href="TICPELAyo/html-ejerc6_1-img.html .html">ejercicio 6</a><br>
-      <a href="TICPELAyo/html-ejerc6-img.html.html">ejercicio 6.1</a><br>
-      <a href="TICPELAyo/html-ejerc7-viaje.html.html"> ejercicio 7</a><br>
+        <a href="TICPELAyo/Ejercicio 2 Desafío HTML.html">ejercicio 2</a><br>
+        <a href="TICPELAyo/Ejercicio 3 Etiquetas strong y em.html">ejercicio 3</a><br>
+        <a href="TICPELAyo/html-ejerc4-listas.html">ejericio 4</a><br>
+        <a href="TICPELAyo/html-ejerc5-utf-8.html.html">ejercicio 5</a><br>
+        <a href="TICPELAyo/html-ejerc6_1-img.html .html">ejercicio 6</a><br>
+        <a href="TICPELAyo/html-ejerc6-img.html.html">ejercicio 6.1</a><br>
+        <a href="TICPELAyo/html-ejerc7-viaje.html.html">ejercicio 7</a><br>
+
+       
+        <p class="boton"><a href="#">Volver al inicio</a></p>
     </div>
 
-  
-    <div class="ejercicios-css">
+    <div class="ejercicios-css" id="css-section">
         <h2>Ejercicios introducción a CSS</h2>
         <a href="TICPELAyo/html-ejerc8-color.html.html">ejercicio 8</a><br>
         <a href="TICPELAyo/html-ejerc9-criatura.htm.html">ejercicio 9</a><br>
         <a href="TICPELAyo/html-ejerc10-criatura2.html">ejercicio 10</a><br>
         <a href="TICPELAyo/html-ejerc11-formato.html.html">ejercicio 11</a><br>
-         <a href="TICPELAyo/html-ejerc12-Olafs.html.html">ejercicio 12</a><br>
+        <a href="TICPELAyo/html-ejerc12-Olafs.html.html">ejercicio 12</a><br>
         <a href="TICPELAyo/html-ejerc13-clases.html.html">ejercicio 13</a><br>
         <a href="TICPELAyo/html-ejerc14-desafio-clases.html.html">ejercicio 14</a><br>
         <a href="TICPELAyo/html-ejerc15-selectores.html">ejercicio 15</a><br>
         <a href="TICPELAyo/html-ejer16.html">ejercicio 16.</a><br>
-      <a href="TICPELAyo/html-ejerc18-vinculos.html">ejercicio 18.</a><br>
-     <a href="TICPELAyo/html-ejerc19-vinculos_internos.html">ejercicio 19.</a><br>
+        <a href="TICPELAyo/html-ejerc18-vinculos.html">ejercicio 18.</a><br>
+        <a href="TICPELAyo/html-ejerc19-vinculos_internos.html">ejercicio 19.</a><br>
+
+        <p class="boton"><a href="#">Volver al inicio</a></p>
     </div>
 
 </body>
+
 </html>
 
     
