@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ejercicio 6 - Estructuras condicionales</title>
+</head>
+<body>
+  <h1>Ejercicio 6: Estructuras condicionales</h1>
+  <p>Este ejercicio consiste en un programa que toma decisiones según las respuestas del usuario.</p>
+  <script>
+    let jugar = prompt("Este programa funciona tomando decisiones, ¿quieres jugar? Responde con una s minúscula si es que sí o con una n mayúscula si es que no");
+
+    if (jugar.toLowerCase() === "s") {
+      var fruta = prompt("Introduce el nombre de una fruta que desees con la primera letra en mayúscula");
+
+      switch (fruta) {
+        case 'Naranjas':
+          alert('El kilogramo de naranjas cuesta $0.59.');
+          break;
+        case 'Manzanas':
+          alert('El kilogramo de manzanas cuesta $0.32.');
+          break;
+        case 'Platanos':
+          alert('El kilogramo de platanos cuesta $0.48.');
+          break;
+        case 'Cerezas':
+          alert('El kilogramo de cerezas cuesta $3.00.');
+          break;
+        case 'Mangos':
+        case 'Papayas':
+          alert('El kilogramo de mangos y papayas cuesta $2.79.');
+          break;
+        default:
+          alert('Lo lamentamos, por el momento no disponemos de ' + fruta + '.');
+      }
+
+      var respuesta = prompt("¿Hay algo más que te quisiera consultar?, responde si o no");
+
+      if (respuesta.toLowerCase() === "si") {
+        alert("No tenemos tiempo para responderte en este momento. Gracias");
+      } else {
+        alert("Muchas gracias por tu consulta");
+      }
+    } else {
+      alert("Es una pena que no quieras participar. Quizás para la siguiente");
+    }
+  </script>
+</body>
+</html>
