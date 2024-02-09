@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    var topping = window.prompt("qué topping quieres: oreo, kitkat, brownie, lacasitos u otro");
+    var precio = 0.00;
+    var helado = 1.90;
+    var precioFinal = 0.00;
+
+    switch (topping) {
+      case "oreo":
+        precio = 1;
+        break;
+      case "kitkat":
+        precio = 1.50;
+        break;
+      case "brownie":
+        precio = 0.75;
+        break;
+      case "lacasitos":
+        precio = 0.95;
+        break;
+      default:
+        document.write("no tenemos este topping, lo sentimos. ");
+        precio = 0;
+    }
+
+    precioFinal = helado + precio;
+    document.write("el helado cuesta " + precioFinal + " €");
+  </script>
+</body>
+
+</html>
