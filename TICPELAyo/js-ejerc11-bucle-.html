@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con Bucles For Tic 2 bach</title>
+</head>
+
+<body>
+    <script>
+       
+        for (let i = 1; i <= 100; i++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        }
+
+        
+        let suma = 0;
+        for (let i = 1; i <= 10; i++) {
+            suma += i;
+        }
+        console.log(`La suma de los primeros 10 números es: ${suma}`);
+
+       
+        let letra = 'A';
+        let cantidad = 5;
+        let resultado = '';
+
+        for (let i = 0; i < cantidad; i++) {
+            resultado += letra;
+        }
+        console.log(`La cadena generada es: ${resultado}`);
+
+      
+        function mostrarTablaMultiplicar() {
+            let numero = document.getElementById('numero').value;
+            let tablaMultiplicar = '';
+            for (let i = 1; i <= 10; i++) {
+                tablaMultiplicar += `${numero} x ${i} = ${numero * i}<br>`;
+            }
+            document.getElementById('resultados').innerHTML = tablaMultiplicar;
+        }
+
+        function calcularFactorial() {
+            let numero = document.getElementById('factorial').value;
+            let factorial = 1;
+            for (let i = 1; i <= numero; i++) {
+                factorial *= i;
+            }
+            document.getElementById('factorialResult').innerHTML = `El factorial de ${numero} es: ${factorial}`;
+        }
+
+        function contarVocales() {
+            let texto = document.getElementById('texto').value.toLowerCase();
+            let contador = 0;
+            for (let i = 0; i < texto.length; i++) {
+                let letra = texto[i];
+                if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+                    contador++;
+                }
+            }
+            document.getElementById('vocalesResult').innerHTML = `Hay ${contador} vocales en la entrada.`;
+        }
+    </script>
+
+    <label for="numero">Ingresar un número:</label>
+    <input type="number" id="numero">
+    <button onclick="mostrarTablaMultiplicar()">Mostrar Tabla de Multiplicar</button>
+
+    <br><br>
+
+    <label for="factorial">dame un número que quieras:</label>
+    <input type="number" id="factorial">
+    <button onclick="calcularFactorial()">Calcular </button>
+    <div id="factorialResult"></div>
+
+    <br><br>
+
+    <label for="texto">Pide una palabra o frase:</label>
+    <input type="text" id="texto">
+    <button onclick="contarVocales()">Contar Vocales</button>
+    <div id="vocalesResult"></div>
+
+    <div id="resultados"></div>
+</body>
+
+</html>
